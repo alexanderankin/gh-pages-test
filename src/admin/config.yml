@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  # https://decapcms.org/docs/github-backend/
+  name: github
   branch: main # Branch to update (optional; defaults to master)
+  # https://decapcms.org/docs/github-backend/
+  repo: alexanderankin/gh-pages-test
 
 publish_mode: editorial_workflow
 media_folder: src/images/uploads
