@@ -1,3 +1,17 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+
+publish_mode: editorial_workflow
+media_folder: src/images/uploads
+public_folder: /gh-pages-test/images/uploads
+collections:
+  - name: posts
+    label: Post
+    folder: _posts/posts
+    create: true
+    #slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string, default: Post }
+      - { label: Content, name: content, widget: markdown, default: '# Hello' }
+#
